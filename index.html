@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Assignment</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: Poppins, Roboto, Arial, sans-serif;
+        font-size: 16px;
+      }
+
+      h1 {
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      p {
+        color: blue;
+        background-color: lightgrey;
+      }
+
+      .box {
+        width: 200px;
+        height: 100px;
+        background-color: lightblue;
+      }
+
+      #title {
+        color: green;
+        text-align: center;
+      }
+
+      .box-model {
+        width: 250px;
+        padding: 20px;
+        border: 3px solid black;
+        margin: 15px;
+      }
+
+      .border-box {
+        width: 250px;
+        padding: 20px;
+        border: 3px solid black;
+        margin: 15px;
+        box-sizing: border-box;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration-line: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: red;
+      }
+
+      .rgb-text {
+        color: rgb(255, 0, 0);
+      }
+
+      .hex-bg {
+        background-color: #000000;
+        color: white;
+        padding: 10px;
+      }
+
+      .card {
+        padding: 10px 20px;
+        margin: 15px 30px;
+        background-color: #eeeeee;
+      }
+
+      .overflow-box {
+        width: 200px;
+        height: 100px;
+        border: 2px solid black;
+        overflow: auto;
+      }
+
+      span {
+        background-color: red;
+        width: 100px;
+      }
+
+      .block {
+        width: 200px;
+        height: 50px;
+        background-color: yellow;
+        margin-bottom: 10px;
+      }
+
+      .inline-block {
+        display: inline-block;
+        width: 150px;
+        height: 100px;
+        margin: 10px;
+        background-color: lightpink;
+      }
+
+      .none {
+        display: none;
+      }
+
+      .hidden {
+        visibility: hidden;
+      }
+
+      .rgba-box {
+        width: 200px;
+        height: 200px;
+        background-color: rgba(255, 0, 0, 0.5);
+      }
+
+      .opacity-box {
+        width: 100px;
+        height: 100px;
+        opacity: 0.5;
+        display: inline-block;
+      }
+
+      .parent {
+        width: 400px;
+        background-color: lightblue;
+      }
+
+      .child {
+        width: 50%;
+        background-color: blue;
+      }
+
+      .em-box {
+        font-size: 20px;
+        padding: 2em;
+        background-color: gray;
+      }
+
+      html {
+        font-size: 16px;
+      }
+
+      .rem-text {
+        font-size: 2rem;
+      }
+
+      .bg {
+        height: 300px;
+        background-image: url('beach.avif');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .flex-start {
+        width: 300px;
+        height: 300px;
+        border: 2px solid black;
+        display: flex;
+      }
+
+      .flex-center {
+        width: 300px;
+        height: 300px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .small-box {
+        width: 100px;
+        height: 100px;
+        background-color: gold;
+      }
+
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: gray;
+      }
+
+      .nav div {
+        color: black;
+        padding: 10px;
+        flex: 1;
+        text-align: center;
+      }
+
+      .profile-card {
+        width: 200px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .course-card {
+        width: 200px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+      }
+
+      .product-card {
+        max-width: 400px;
+        border: 1px solid black;
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+      }
+
+      .testimonial {
+        max-width: 400px;
+        border: 1px solid black;
+        padding: 10px;
+      }
+
+      .pricing {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .price-card {
+        width: 200px;
+        border: 1px solid black;
+        margin: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .footer {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #222;
+        color: white;
+      }
+
+      .footer div {
+        min-width: 200px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>CSS Practice Assignment</h1>
+
+    <h2>Q1. Change Text Color and Background</h2>
+    <p>This is a paragraph</p>
+
+    <h2 id="title">Q2. Class and ID Selectors</h2>
+    <div class="box"></div>
+
+    <h2>Q3. Box Model Properties</h2>
+    <div class="box-model">Box Model</div>
+
+    <h2>Q4. Box Sizing Border Box</h2>
+    <div class="border-box">Border Box</div>
+
+    <h2>Q5. Text Formatting</h2>
+    <h1>Sample Heading</h1>
+
+    <h2>Q6. Font Styling</h2>
+    <p>Font applied to body</p>
+
+    <h2>Q7. Text Decoration on Links</h2>
+    <a href="#">Hover this link</a>
+
+    <h2>Q8. RGB and Hex Colors</h2>
+    <p class="rgb-text">RGB Red Text</p>
+    <div class="hex-bg">Hex Black Background</div>
+
+    <h2>Q9. Padding and Margin Shorthand</h2>
+    <div class="card">Card Content</div>
+
+    <h2>Q10. Height Width and Overflow</h2>
+    <div class="overflow-box">
+      This text is longer than the height of the box so overflow appears.
+    </div>
+
+    <h2>Q1. Display Inline</h2>
+    <span>One</span>
+    <span>Two</span>
+
+    <h2>Q2. Display Block</h2>
+    <div class="block"></div>
+    <div class="block"></div>
+
+    <h2>Q3. Inline Block Boxes</h2>
+    <div class="inline-block"></div>
+    <div class="inline-block"></div>
+    <div class="inline-block"></div>
+
+    <h2>Q4. Hide Elements</h2>
+    <p class="none">Hidden</p>
+    <p class="hidden">Invisible</p>
+
+    <h2>Q5. RGBA Transparency</h2>
+    <div class="rgba-box"></div>
+
+    <h2>Q6. Opacity Practice</h2>
+    <div class="opacity-box" style="background: red"></div>
+    <div class="opacity-box" style="background: green"></div>
+    <div class="opacity-box" style="background: blue"></div>
+
+    <h2>Q7. Percentage Width</h2>
+    <div class="parent">
+      <div class="child">50%</div>
+    </div>
+
+    <h2>Q8. em Unit Practice</h2>
+    <div class="em-box">em padding</div>
+
+    <h2>Q9. rem Unit Practice</h2>
+    <p class="rem-text">rem text</p>
+
+    <h2>Q10. Background Image</h2>
+    <div class="bg"></div>
+
+    <h2>Flexbox Q1. Box at Top Left</h2>
+    <div class="flex-start">
+      <div class="small-box"></div>
+    </div>
+
+    <h2>Flexbox Q2. Centered Box</h2>
+    <div class="flex-center">
+      <div class="small-box"></div>
+    </div>
+
+    <h2>Flexbox Q3. Responsive Navigation Bar</h2>
+    <div class="nav">
+      <div>Home</div>
+      <div>About</div>
+      <div>Contact</div>
+    </div>
+
+    <h2>Flexbox Q4. Profile Card</h2>
+    <div class="profile-card">
+      <img src="Profile card.webp" />
+      <strong>Name</strong>
+      <p>Description</p>
+    </div>
+
+    <h2>Flexbox Q5. Course Card</h2>
+    <div class="course-card">
+      <img src="Course Card.webp" />
+      <strong>Course</strong>
+      <p>Description</p>
+    </div>
+
+    <h2>Flexbox Q6. Product Card</h2>
+    <div class="product-card">
+      <img src="Product card.webp" />
+      <div>
+        <strong>Product</strong>
+        <p>Details</p>
+      </div>
+    </div>
+
+    <h2>Flexbox Q7. Testimonial Card</h2>
+    <div class="testimonial">
+      <p>Very good product</p>
+      <strong>User Name</strong>
+    </div>
+
+    <h2>Flexbox Q8. Pricing Card</h2>
+    <div class="price-card">
+      <strong>Basic</strong>
+      <span>₹199</span>
+      <button>Buy</button>
+    </div>
+
+    <h2>Flexbox Q9. Pricing Cards Row</h2>
+    <div class="pricing">
+      <div class="price-card">Basic</div>
+      <div class="price-card">Pro</div>
+      <div class="price-card">Premium</div>
+    </div>
+
+    <h2>Flexbox Q10. Responsive Footer</h2>
+    <div class="footer">
+      <div>Column 1</div>
+      <div>Column 2</div>
+      <div>Column 3</div>
+    </div>
+  </body>
+</html>
